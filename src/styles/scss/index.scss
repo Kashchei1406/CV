@@ -1,0 +1,117 @@
+@use './common/mixins' as mixin;
+@use './common/variavles' as var;
+@use './common/extends' as *;
+@import '../css/fonts.css';
+
+/*.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+}*/
+
+.container {
+  padding: 0 15px;
+  max-width: 1470px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  background-color: var.$color-primary;
+  min-height: 712px;
+}
+
+.main-nav {
+  padding: 40px 0;
+  border-bottom: 1px var.$text-color-secondary solid;
+}
+
+.main-nav__list {
+  @extend %flex-space-between;
+}
+
+.main-nav__link {
+  @include mixin.font-normal(24px, var.$text-color-secondary);
+}
+
+.main-nav__link:focus {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.header__content {
+  @extend %flex-space-between;
+}
+
+.header__about {
+  @extend %flex-column;
+}
+
+.title {
+  @extend %flex-center;
+}
+
+.title__item {
+  margin-top: 72px;
+  @extend %flex-column;
+  @include mixin.font-bold(var.$text-size-title, var.$text-color-primary);
+}
+
+.header__title {
+   display: block;
+   @extend %animation-down-top;
+ }
+
+._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.header__title-item--gray {
+  color: var.$gray-color;
+  margin-top: 8px;
+  @extend %animation-down-top-slowly
+}
+
+.header__overview {
+  @include mixin.font-normal(var.$text-size-normal, var.$text-color-secondary);
+  margin-top: 40px;
+}
+
+.header__overview-item--margin-top {
+  margin-top: 1em;
+}
+
+.header__img {
+  @extend .header__buttons;
+}
+
+.header__buttons {
+  margin-top: 72px;
+}
+
+.header__btn--margin-right {
+  margin-right: 12px;
+}
+
+.header__btn--margin-left {
+  margin-left: 12px;
+}
+
+.btn {
+  background-color: var.$primary-color-btn;
+  max-width: 185px;
+  width: 100%;
+  height: 56px;
+}
+
+.btn__text {
+  @include mixin.font-bold(var.$text-size-subtitle, var.$text-color-btn);
+  display: block;
+  white-space: nowrap;
+}
+
+.skills {
+  background-color: var.$color-secondary;
+  min-height: 570px;
+}

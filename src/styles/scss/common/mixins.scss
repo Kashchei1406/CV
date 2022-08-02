@@ -1,0 +1,14 @@
+@import "./extends.scss";
+@import "reset.scss";
+
+@mixin font-normal($size: 22px, $color: black) {
+  color: $color;
+  font-size: $size;
+  @extend %font-normal;
+}
+
+@mixin font-bold($size: 22px, $color: black) {
+  color: $color;
+  font-size: $size;
+  @extend %font-bold;
+}

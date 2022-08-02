@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+
+a, button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.col-2 {
+  width: calc((100% / 12) * 2);
+}
+
+.col-3 {
+  width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+  width: calc((100% / 12) * 4);
+}
+
+.col-6 {
+  width: calc((100% / 12) * 6);
+}
+
+.col-12 {
+  width: 100%;
+}
