@@ -1,37 +1,57 @@
-@use './common/mixins' as mixin;
-@use './common/variavles' as var;
-@use './common/extends' as *;
 @import '../css/fonts.css';
-
-/*.wrapper {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1440px;
-}*/
-
-.container {
-  padding: 0 15px;
-  max-width: 1470px;
-  margin: 0 auto;
-  width: 100%;
-}
+@import './common';
 
 .header {
-  background-color: var.$color-primary;
+  background-color: $color-primary;
   min-height: 712px;
 }
 
 .main-nav {
   padding: 40px 0;
-  border-bottom: 1px var.$text-color-secondary solid;
+  border-bottom: 1px $text-color-secondary solid;
 }
 
 .main-nav__list {
   @extend %flex-space-between;
 }
 
+.main-nav__item {
+  @extend %animation-down-top;
+}
+
+.main-nav__list {
+  & ._active {
+    @for $var from 1 to 7 {
+      $delay: $var * 0.1;
+      &:nth-child(#{$var}) {
+        @if $var==1 {
+          transition: all 0.8s ease 0s;
+        } @else {
+          transition: all 0.8s ease #{$delay + s};
+        }
+      }
+    }
+  }
+}
+
+.header__overview {
+  & ._active {
+    @for $var from 1 to 3 {
+      $delay: $var * 0.1 + 0.4;
+      &:nth-child(#{$var}) {
+        transition: all 0.8s ease #{$delay + s};
+      }
+    }
+  }
+}
+
+._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .main-nav__link {
-  @include mixin.font-normal(24px, var.$text-color-secondary);
+  @include font-normal(24px, $text-color-secondary);
 }
 
 .main-nav__link:focus {
@@ -49,33 +69,33 @@
 
 .title {
   @extend %flex-center;
+  overflow: hidden;
 }
 
 .title__item {
   margin-top: 72px;
   @extend %flex-column;
-  @include mixin.font-bold(var.$text-size-title, var.$text-color-primary);
+  @include font-bold($text-size-title, $text-color-primary);
 }
 
 .header__title {
-   display: block;
-   @extend %animation-down-top;
- }
-
-._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
+  display: block;
+  @extend %animation-down-top;
 }
 
 .header__title-item--gray {
-  color: var.$gray-color;
+  color: $gray-color;
   margin-top: 8px;
-  @extend %animation-down-top-slowly
+  @extend %animation-down-top-slowly;
 }
 
 .header__overview {
-  @include mixin.font-normal(var.$text-size-normal, var.$text-color-secondary);
+  @include font-normal($text-size-normal, $text-color-secondary);
   margin-top: 40px;
+}
+
+.header__overview-item {
+  @extend %animation-down-top;
 }
 
 .header__overview-item--margin-top {
@@ -84,6 +104,8 @@
 
 .header__img {
   @extend .header__buttons;
+  display: flex;
+  justify-content: end;
 }
 
 .header__buttons {
@@ -99,19 +121,170 @@
 }
 
 .btn {
-  background-color: var.$primary-color-btn;
+  background-color: $primary-color-btn;
   max-width: 185px;
   width: 100%;
   height: 56px;
 }
 
 .btn__text {
-  @include mixin.font-bold(var.$text-size-subtitle, var.$text-color-btn);
+  @include font-bold($text-size-subtitle, $text-color-btn);
   display: block;
   white-space: nowrap;
 }
 
 .skills {
-  background-color: var.$color-secondary;
-  min-height: 570px;
+  background-color: $color-secondary;
+  @extend %flex-column-center;
+}
+
+.skills__content {
+  padding-top: 54px;
+  display: flex;
+  justify-items: start;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-height: 340px;
+  transition: all 0.1s 0.1s;
+}
+
+._full-height {
+  transition: all 0.2s;
+  max-height: 100%;
+}
+
+.skills__item {
+  @extend %flex-column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 21px;
+  margin-bottom: 80px;
+
+  figcaption {
+    @extend %flex-column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+.skills__rating {
+  margin-top: 50px;
+  width: 100%;
+  @extend %flex-space-around;
+}
+
+.btn-arrow {
+  border: none;
+  margin-bottom: 72px;
+  background-color: #F3F3F4;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.3s;
+  box-shadow: -4px 0 5px rgba(0, 0, 0, 0.3),
+  inset 4px 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.btn-arrow:hover{
+  width: 42px;
+  height: 42px;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.3),
+  inset 5px 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.btn-arrow__img {
+  width: 60%;
+  height: 60%;
+  transform: rotate(90deg);
+}
+
+._rotate {
+  transform: rotate(-180deg);
+}
+
+.experience {
+  background-color: $color-primary;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.background__item {
+  display: flex;
+  justify-content: start;
+}
+
+.timeline {
+  @include font-normal($text-size-subtitle, $gray-color);
+  display: flex;
+  align-self: center;
+  margin-right: 40px;
+  padding-left: -6px;
+}
+
+.timeline__ellipse {
+  width: 12px;
+  margin-right: 12px;
+  padding-left: -6px;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.subtitle {
+  @include font-bold($text-size-subtitle, $text-color-primary);
+  @extend %flex-column;
+
+  .subtitle__position {
+    font-weight: normal;
+    display: flex;
+  }
+}
+
+.background__text {
+  @include font-normal($text-size-content, $gray-color);
+  margin-top: 8px;
+}
+
+.background__item:first-child .timeline {
+  color: $ellipse-primary-color;
+}
+
+.background__item:first-child .timeline__ellipse{
+  fill: $ellipse-primary-color;
+}
+
+.background__item--revert {
+  align-self: start;
+  flex-direction: row-reverse;
+
+  .timeline {
+    flex-direction: row-reverse;
+    margin-right: 0;
+    margin-left: 40px;
+  }
+
+  .timeline__ellipse{
+    margin-right: 0;
+    margin-left: 12px;
+  }
+
+ .subtitle__company{
+   align-self: end;
+   text-align: end;
+ }
+
+  .background__text{
+    text-align: end;
+  }
 }

@@ -10,26 +10,41 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <nav class="main-nav">
-            <ul class="main-nav__list col-12">
-              <li class="main-nav__item"><a class="col-2 main-nav__link" href="#">About</a></li>
-              <li class="main-nav__item"><a class="col-2 main-nav__link" href="#">Skills</a></li>
-              <li class="main-nav__item"><a class="col-2 main-nav__link" href="#">Experience</a></li>
-              <li class="main-nav__item"><a class="col-2 main-nav__link" href="#">Projects</a></li>
-              <li class="main-nav__item"><a class="col-2 main-nav__link" href="#">Education</a></li>
-              <li class="main-nav__item"><a class="col-2 main-nav__link" href="#">Contact me</a></li>
+          <nav class="main-nav col-12">
+            <ul class="main-nav__list">
+              <li class="main-nav__item _anim-item _anim-no-hide">
+                <a class="col-2 main-nav__link" href="#">About</a>
+              </li>
+              <li class="main-nav__item _anim-item _anim-no-hide">
+                <a class="col-2 main-nav__link" href="#">Skills</a>
+              </li>
+              <li class="main-nav__item _anim-item _anim-no-hide">
+                <a class="col-2 main-nav__link" href="#">Experience</a>
+              </li>
+              <li class="main-nav__item _anim-item _anim-no-hide">
+                <a class="col-2 main-nav__link" href="#">Projects</a>
+              </li>
+              <li class="main-nav__item _anim-item _anim-no-hide">
+                <a class="col-2 main-nav__link" href="#">Education</a>
+              </li>
+              <li class="main-nav__item _anim-item _anim-no-hide">
+                <a class="col-2 main-nav__link" href="#">Contact me</a>
+              </li>
             </ul>
           </nav>
           <div class="header__content col-12">
             <div class="header__about col-6">
               <div class="header__title title _anim-item _anim-no-hide">
                 <h1 class="title__item">
-                  Andrei Kashchei <span class="header__title-item--gray _anim-item _anim-no-hide">Front-end developer</span>
+                  Andrei Kashchei
+                  <span class="header__title-item--gray _anim-item _anim-no-hide">Front-end developer</span>
                 </h1>
               </div>
               <div class="header__overview">
-                <p class="header__overview-item">Hi, I`m Andrei Kashchei and I`m Junior Front-end developer.</p>
-                <p class="header__overview-item header__overview-item--margin-top">
+                <p class="header__overview-item _anim-item _anim-no-hide">
+                  Hi, I`m Andrei Kashchei and I`m Junior Front-end developer.
+                </p>
+                <p class="header__overview-item header__overview-item--margin-top _anim-item _anim-no-hide">
                   I have a completed Front-end courses at IT School Intellect Fox and have basic knowledge of HTML, CSS,
                   JavaScript, React and Redux
                 </p>
@@ -46,20 +61,62 @@
         </div>
       </header>
       <main>
-        <section class="skills">
+        <section class="skills" id="skills-section">
           <div class="container">
             <div class="skills__title title">
               <h2 class="title__item">Skills</h2>
             </div>
-            <div class="skills__content">
+            <div class="skills__content col-12" id="skills-content">
+            </div>
+            <button class="btn-arrow skills__btn col-1" id="skills-arrow">
+              <img class="btn-arrow__img" src="./src/images/arrow-line.svg" alt="arrow" />
+            </button>
 
+          </div>
+        </section>
+        <section class="experience">
+          <div class="container">
+            <div class="title">
+              <h2 class="title__item">Work Experience</h2>
+            </div>
+            <div class="experience__content background col-12">
+              <div class="experience__item background__item col-6">
+                <div class="timeline">
+                  <img class="timeline__ellipse" src="./src/images/ellipse.svg" alt="ellipse" />
+                  <h4>Feb 2021 - till now</h4>
+                </div>
+                <div class="subtitle">
+                  <h3 class="subtitle__company">TAJ<span class="subtitle__position">International driver</span></h3>
+                  <p class="background__text">Air cargo movement in western Europe</p>
+                </div>
+              </div>
+              <div class="experience__item background__item background__item--revert col-6">
+                <div class="timeline">
+                  <img class="timeline__ellipse" src="./src/images/ellipse.svg" alt="ellipse" />
+                  <h4>Feb 2021 - till now</h4>
+                </div>
+                <div class="subtitle">
+                  <h3 class="subtitle__company">TAJ<span class="subtitle__position">International driver</span></h3>
+                  <p class="background__text">Air cargo movement in western Europe</p>
+                </div>
+              </div>
+              <div class="experience__item background__item col-6">
+                <div class="timeline">
+                  <img class="timeline__ellipse" src="./src/images/ellipse.svg" alt="ellipse" />
+                  <h4>Feb 2021 - till now</h4>
+                </div>
+                <div class="subtitle">
+                  <h3 class="subtitle__company">TAJ<span class="subtitle__position">International driver</span></h3>
+                  <p class="background__text">Air cargo movement in western Europe</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </main>
       <footer></footer>
     </div>
-    <script src="./src/js/main.js"></script>
+    <script src="./src/js/main.js" type="module"></script>
     <script src="./src/js/modules/animation.js"></script>
   </body>
 </html>
