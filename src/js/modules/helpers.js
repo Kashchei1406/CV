@@ -4,6 +4,3 @@ export function scrollTo(value) {
         top: offsetElement,
         behavior: "smooth"})
 }
-
-
-

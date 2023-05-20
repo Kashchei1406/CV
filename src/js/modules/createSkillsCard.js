@@ -1,8 +1,11 @@
+import starImg from '../../assets/images/star-black.svg'
+import starGreyImg from '../../assets/images/star-grey.svg'
+
 const blackStarImage = document.createElement('img');
-blackStarImage.src = 'src/images/star-black.svg';
+blackStarImage.src = starImg;
 blackStarImage.alt = 'Rating star, black';
 const greyStarImage = document.createElement('img');
-greyStarImage.src = 'src/images/star-grey.svg';
+greyStarImage.src = starGreyImg;
 greyStarImage.alt = 'Rating star, grey';
 
 const createRating = (rating) => {

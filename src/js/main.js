@@ -1,12 +1,14 @@
+import "../styles/scss/index.scss"
 import createCard from './modules/createSkillsCard.js';
 import { skillsArray } from './constants/data.js';
-import {skillsContent, skillsArrow} from "./constants/common.js";
-import showSkills from "./modules/skills.js";
-import {scrollTo} from "./modules/helpers.js";
+import { SKILLS_CONTENT, SKILLS_ARROW, ANIM_ITEMS } from './constants/common.js';
+import { showSkills } from "./modules/skills.js";
+import { checkAnimItems } from './modules/animation.js';
 
+checkAnimItems(ANIM_ITEMS)
 skillsArray
   .sort((a, b) => b.rating - a.rating)
-  .forEach((skill) => skillsContent.insertAdjacentHTML('beforeend', createCard(skill)));
+  .forEach((skill) => SKILLS_CONTENT.insertAdjacentHTML('beforeend', createCard(skill)));
 
-skillsArrow.addEventListener('click', () => showSkills());
+SKILLS_ARROW.addEventListener('click', () => showSkills());
 

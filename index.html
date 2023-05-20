@@ -1,122 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CV</title>
-    <link href="src/styles/css/style.css" rel="stylesheet" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <nav class="main-nav col-12">
-            <ul class="main-nav__list">
-              <li class="main-nav__item _anim-item _anim-no-hide">
-                <a class="col-2 main-nav__link" href="#">About</a>
-              </li>
-              <li class="main-nav__item _anim-item _anim-no-hide">
-                <a class="col-2 main-nav__link" href="#">Skills</a>
-              </li>
-              <li class="main-nav__item _anim-item _anim-no-hide">
-                <a class="col-2 main-nav__link" href="#">Experience</a>
-              </li>
-              <li class="main-nav__item _anim-item _anim-no-hide">
-                <a class="col-2 main-nav__link" href="#">Projects</a>
-              </li>
-              <li class="main-nav__item _anim-item _anim-no-hide">
-                <a class="col-2 main-nav__link" href="#">Education</a>
-              </li>
-              <li class="main-nav__item _anim-item _anim-no-hide">
-                <a class="col-2 main-nav__link" href="#">Contact me</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__content col-12">
-            <div class="header__about col-6">
-              <div class="header__title title _anim-item _anim-no-hide">
-                <h1 class="title__item">
-                  Andrei Kashchei
-                  <span class="header__title-item--gray _anim-item _anim-no-hide">Front-end developer</span>
-                </h1>
-              </div>
-              <div class="header__overview">
-                <p class="header__overview-item _anim-item _anim-no-hide">
-                  Hi, I`m Andrei Kashchei and I`m Junior Front-end developer.
-                </p>
-                <p class="header__overview-item header__overview-item--margin-top _anim-item _anim-no-hide">
-                  I have a completed Front-end courses at IT School Intellect Fox and have basic knowledge of HTML, CSS,
-                  JavaScript, React and Redux
-                </p>
-              </div>
-              <div class="header__buttons">
-                <button class="header__btn--margin-right btn"><span class="btn__text">Download CV</span></button>
-                <button class="header__btn--margin-left btn"><span class="btn__text">Contact me</span></button>
-              </div>
-            </div>
-            <div class="header__img col-4">
-              <img src="./src/images/Andrei.jpg" alt="Andrei Kashchei" />
-            </div>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <title>CV</title>
+  <meta content='width=device-width, initial-scale=1' name='viewport' />
+</head>
+<body>
+<div class='wrapper'>
+  <nav class='main-nav col-12'>
+    <div class='container'>
+      <ul class='main-nav__list'>
+        <li class='main-nav__item _anim-item _anim-no-hide'>
+          <a class='col-2 main-nav__link' href='#header-section'>About</a>
+        </li>
+        <li class='main-nav__item _anim-item _anim-no-hide'>
+          <a class='col-2 main-nav__link' href='#skills-section'>Skills</a>
+        </li>
+        <li class='main-nav__item _anim-item _anim-no-hide'>
+          <a class='col-2 main-nav__link' href='#experience-section'>Experience</a>
+        </li>
+        <li class='main-nav__item _anim-item _anim-no-hide'>
+          <a class='col-2 main-nav__link' href='#projects-section'>Projects</a>
+        </li>
+        <li class='main-nav__item _anim-item _anim-no-hide'>
+          <a class='col-2 main-nav__link' href='#education-section'>Education</a>
+        </li>
+        <li class='main-nav__item _anim-item _anim-no-hide'>
+          <a class='col-2 main-nav__link' href='#'>Contact me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class='header' id='header-section'>
+    <div class='container'>
+      <div class='header__content col-12'>
+        <div class='header__about col-6'>
+          <div class='header__title title _anim-item _anim-no-hide'>
+            <h1 class='title__item'>
+              Andrei Kashchei
+              <span class='header__title-item--gray _anim-item _anim-no-hide'>Front-end developer</span>
+            </h1>
+          </div>
+          <div class='header__overview'>
+            <p class='header__overview-item _anim-item _anim-no-hide'>
+              Hi, I`m Andrei Kashchei and I`m Junior Front-end developer.
+            </p>
+            <p class='header__overview-item header__overview-item--margin-top _anim-item _anim-no-hide'>
+              I have a completed Front-end courses at IT School Intellect Fox and have basic knowledge of HTML, CSS,
+              JavaScript, React and Redux
+            </p>
+          </div>
+          <div class='header__buttons'>
+            <button class='header__btn--margin-right btn col-2'><span class='btn__text'>Download CV</span></button>
+            <button class='header__btn--margin-left btn col-2'><span class='btn__text'>Contact me</span></button>
           </div>
         </div>
-      </header>
-      <main>
-        <section class="skills" id="skills-section">
-          <div class="container">
-            <div class="skills__title title">
-              <h2 class="title__item">Skills</h2>
-            </div>
-            <div class="skills__content col-12" id="skills-content">
-            </div>
-            <button class="btn-arrow skills__btn col-1" id="skills-arrow">
-              <img class="btn-arrow__img" src="./src/images/arrow-line.svg" alt="arrow" />
-            </button>
-
-          </div>
-        </section>
-        <section class="experience">
-          <div class="container">
-            <div class="title">
-              <h2 class="title__item">Work Experience</h2>
-            </div>
-            <div class="experience__content background col-12">
-              <div class="experience__item background__item col-6">
-                <div class="timeline">
-                  <img class="timeline__ellipse" src="./src/images/ellipse.svg" alt="ellipse" />
-                  <h4>Feb 2021 - till now</h4>
-                </div>
-                <div class="subtitle">
-                  <h3 class="subtitle__company">TAJ<span class="subtitle__position">International driver</span></h3>
-                  <p class="background__text">Air cargo movement in western Europe</p>
-                </div>
-              </div>
-              <div class="experience__item background__item background__item--revert col-6">
-                <div class="timeline">
-                  <img class="timeline__ellipse" src="./src/images/ellipse.svg" alt="ellipse" />
-                  <h4>Feb 2021 - till now</h4>
-                </div>
-                <div class="subtitle">
-                  <h3 class="subtitle__company">TAJ<span class="subtitle__position">International driver</span></h3>
-                  <p class="background__text">Air cargo movement in western Europe</p>
-                </div>
-              </div>
-              <div class="experience__item background__item col-6">
-                <div class="timeline">
-                  <img class="timeline__ellipse" src="./src/images/ellipse.svg" alt="ellipse" />
-                  <h4>Feb 2021 - till now</h4>
-                </div>
-                <div class="subtitle">
-                  <h3 class="subtitle__company">TAJ<span class="subtitle__position">International driver</span></h3>
-                  <p class="background__text">Air cargo movement in western Europe</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer></footer>
+        <div class='header__img col-4'>
+          <img src='./src/assets/images/photo.jpg' alt='Andrei Kashchei' />
+        </div>
+      </div>
     </div>
-    <script src="./src/js/main.js" type="module"></script>
-    <script src="./src/js/modules/animation.js"></script>
-  </body>
+  </header>
+  <main>
+    <section class='skills' id='skills-section'>
+      <div class='container'>
+        <div class='skills__title title'>
+          <h2 class='title__item'>Skills</h2>
+        </div>
+        <div class='skills__content col-12' id='skills-content'>
+        </div>
+        <button class='btn-arrow skills__btn col-1' id='skills-arrow'>
+          <img class='btn-arrow__img' src='src/assets/images/arrow.svg' alt='arrow' />
+        </button>
+      </div>
+    </section>
+    <section class='experience' id='experience-section'>
+      <div class='container'>
+        <div class='title'>
+          <h2 class='title__item'>Work Experience</h2>
+        </div>
+        <div class='experience__content background col-12'>
+          <div class='experience__item background__item col-6'>
+            <div class='timeline'>
+              <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
+                   xmlns='http://www.w3.org/2000/svg'>
+                <circle cx='6' cy='6' r='6' />
+              </svg>
+              <h4 class='timeline__title'>Feb 2021 - till now</h4>
+            </div>
+            <div class='subtitle'>
+              <h3 class='subtitle__item'>TAJ<span class='subtitle__position'>International driver</span></h3>
+              <p class='background__text'>Air cargo movement in western Europe
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos error
+                exercitationem in iusto minima modi molestiae rerum sapiente sint unde!</p>
+            </div>
+          </div>
+          <div class='experience__item background__item background__item--revert col-6'>
+            <div class='timeline'>
+              <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
+                   xmlns='http://www.w3.org/2000/svg'>
+                <circle cx='6' cy='6' r='6' />
+              </svg>
+              <h4 class='timeline__title'>Feb 2021 - till now</h4>
+            </div>
+            <div class='subtitle'>
+              <h3 class='subtitle__item'>TAJ<span class='subtitle__position'>International driver</span></h3>
+              <p class='background__text'>Air cargo movement in western Europe
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium culpa eum
+                impedit necessitatibus, nulla quae quis rem sequi voluptatem. Cum earum facilis
+                laboriosam maxime porro quasi sint temporibus veniam!</p>
+            </div>
+          </div>
+          <div class='experience__item background__item col-6'>
+            <div class='timeline'>
+              <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
+                   xmlns='http://www.w3.org/2000/svg'>
+                <circle cx='6' cy='6' r='6' />
+              </svg>
+              <h4 class='timeline__title'>Feb 2021 - till now</h4>
+            </div>
+            <div class='subtitle'>
+              <h3 class='subtitle__company'>TAJ<span class='subtitle__position'>International driver</span></h3>
+              <p class='background__text'>Air cargo movement in Western Europe
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, iste.</p>
+            </div>
+          </div>
+          <div class='background__vertical-line'></div>
+        </div>
+      </div>
+    </section>
+    <section class='projects' id='projects-section'>
+      <div class='container'>
+        <div class='title'>
+          <h2 class='title__item'>Projects</h2>
+        </div>
+        <div class='projects__content'>
+          <div class='projects__image-container'>
+            <img class='projects__image' src='./src/assets/images/tripHouse.png' alt='project photo'>
+          </div>
+          <div class='projects__info'>
+            <div>
+              <h3 class='project__subtitle'>Triphouse</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet dicta
+                eaque exercitationem obcaecati officiis quam repellendus totam ut voluptates?
+              </p>
+            </div>
+            <button class='btn'><span class='btn__text'>See on GitHub</span></button>
+          </div>
+        </div>
+        <div class='slider__ellipses'>
+          <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'>
+            <circle cx='6' cy='6' r='6' />
+          </svg>
+          <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'>
+            <circle cx='6' cy='6' r='6' />
+          </svg>
+          <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'>
+            <circle cx='6' cy='6' r='6' />
+          </svg>
+          <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'>
+            <circle cx='6' cy='6' r='6' />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class='education' id='education-section'>
+      <div class='container'>
+        <div class='title'>
+          <h2 class='title__item'>Education</h2>
+        </div>
+        <div class='education__content background col-12'>
+          <div class='experience__item background__item col-6'>
+            <div class='timeline'>
+              <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
+                   xmlns='http://www.w3.org/2000/svg'>
+                <circle cx='6' cy='6' r='6' />
+              </svg>
+              <h4 class='timeline__title'>Feb 2022 - Oct 2022</h4>
+            </div>
+            <div class='subtitle'>
+              <h3 class='subtitle__item'>IT School Intellect Fox
+                <span class='subtitle__position'>Front-end developer course</span>
+              </h3>
+              <p class='background__text'>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos error
+                exercitationem in iusto minima modi molestiae rerum sapiente sint unde!
+              </p>
+            </div>
+          </div>
+          <div class='experience__item background__item background__item--revert col-6'>
+            <div class='timeline'>
+              <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
+                   xmlns='http://www.w3.org/2000/svg'>
+                <circle cx='6' cy='6' r='6' />
+              </svg>
+              <h4 class='timeline__title'>Feb 2021 - till now</h4>
+            </div>
+            <div class='subtitle'>
+              <h3 class='subtitle__item'>TAJ<span class='subtitle__position'>International driver</span></h3>
+              <p class='background__text'>Air cargo movement in western Europe
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium culpa eum
+                impedit necessitatibus, nulla quae quis rem sequi voluptatem. Cum earum facilis
+                laboriosam maxime porro quasi sint temporibus veniam!</p>
+            </div>
+          </div>
+          <div class='experience__item background__item col-6'>
+            <div class='timeline'>
+              <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
+                   xmlns='http://www.w3.org/2000/svg'>
+                <circle cx='6' cy='6' r='6' />
+              </svg>
+              <h4 class='timeline__title'>Feb 2021 - till now</h4>
+            </div>
+            <div class='subtitle'>
+              <h3 class='subtitle__company'>TAJ<span class='subtitle__position'>International driver</span></h3>
+              <p class='background__text'>Air cargo movement in Western Europe
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, iste.</p>
+            </div>
+          </div>
+          <div class='background__vertical-line'></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer></footer>
+</div>
+<script src='src/js/main.js' type='module'></script>
+</body>
 </html>

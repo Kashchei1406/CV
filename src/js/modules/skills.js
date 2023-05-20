@@ -1,16 +1,13 @@
-import { skillsArrow, skillsContent } from '../constants/common.js';
-import { scrollTo } from './helpers.js';
+import { SKILLS_ARROW, SKILLS_CONTENT } from '../constants/common.js';
 
-export default function showSkills() {
-  if (!!skillsContent.classList.contains('_full-height')) {
-    skillsContent.classList.remove('_full-height');
-    skillsArrow.classList.remove('_rotate');
-    setTimeout(() => scrollTo(document.getElementById('skills-section')), 200);
+export function showSkills() {
+  if (!!SKILLS_CONTENT.classList.contains('_full-height')) {
+    SKILLS_CONTENT.classList.remove('_full-height');
+    SKILLS_ARROW.classList.remove('_rotate');
 
     return;
   }
 
-  skillsContent.classList.add('_full-height');
-  skillsArrow.classList.add('_rotate');
-  scrollTo(document.getElementById('skills-section'));
+  SKILLS_CONTENT.classList.add('_full-height');
+  SKILLS_ARROW.classList.add('_rotate');
 }
