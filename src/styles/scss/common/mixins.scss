@@ -3,11 +3,13 @@
 @mixin font-normal($size: 22px, $color: black) {
   color: $color;
   font-size: $size;
+  line-height: calc($size + ($size / 5));
   @extend %font-normal;
 }
 
 @mixin font-bold($size: 22px, $color: black) {
   color: $color;
   font-size: $size;
+  line-height: calc($size + ($size / 5));
   @extend %font-bold;
 }

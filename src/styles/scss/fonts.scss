@@ -3,8 +3,7 @@
   src: local('Roboto'), local('roboto');
   src: url('assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
   src: url('assets/fonts/roboto/Roboto-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-size: large;
+  font-weight: 400;
 }
 
 @font-face {
@@ -12,6 +11,5 @@
   src: local('Roboto'), local('roboto');
   src: url('assets/fonts/roboto/Roboto-Medium.ttf') format('truetype');
   src: url('assets/fonts/roboto/Roboto-Medium.woff2') format('woff2');
-  font-weight: normal;
-  font-size: medium;
+  font-weight: 600;
 }

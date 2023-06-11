@@ -7,11 +7,11 @@
 </head>
 <body>
 <div class='wrapper'>
-  <nav class='main-nav col-12'>
+  <nav class='main-nav col-12' id='navigation'>
     <div class='container'>
       <ul class='main-nav__list'>
         <li class='main-nav__item _anim-item _anim-no-hide'>
-          <a class='col-2 main-nav__link' href='#header-section'>About</a>
+          <a class='col-2 main-nav__link _active-nav' href='#header-section'>About</a>
         </li>
         <li class='main-nav__item _anim-item _anim-no-hide'>
           <a class='col-2 main-nav__link' href='#skills-section'>Skills</a>
@@ -26,12 +26,15 @@
           <a class='col-2 main-nav__link' href='#education-section'>Education</a>
         </li>
         <li class='main-nav__item _anim-item _anim-no-hide'>
-          <a class='col-2 main-nav__link' href='#'>Contact me</a>
+          <a class='col-2 main-nav__link' href='#languages-section'>Languages</a>
+        </li>
+        <li class='main-nav__item _anim-item _anim-no-hide'>
+          <a class='col-2 main-nav__link' href='#contacts__section'>Contact me</a>
         </li>
       </ul>
     </div>
   </nav>
-  <header class='header' id='header-section'>
+  <header class='header sec' data-num='0' id='header-section'>
     <div class='container'>
       <div class='header__content col-12'>
         <div class='header__about col-6'>
@@ -51,18 +54,22 @@
             </p>
           </div>
           <div class='header__buttons'>
-            <button class='header__btn--margin-right btn col-2'><span class='btn__text'>Download CV</span></button>
+            <button class='header__btn--margin-right btn col-2'>
+              <a id='cv-link'  href='/' download='CV_ANDREI_KASHCHEI'>
+              <span class='btn__text'>Download CV</span>
+              </a>
+            </button>
             <button class='header__btn--margin-left btn col-2'><span class='btn__text'>Contact me</span></button>
           </div>
         </div>
-        <div class='header__img col-4'>
+        <div class='header__img col-4 myPhoto'>
           <img src='./src/assets/images/photo.jpg' alt='Andrei Kashchei' />
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section class='skills' id='skills-section'>
+    <section class='skills sec' data-num='1' id='skills-section'>
       <div class='container'>
         <div class='skills__title title'>
           <h2 class='title__item'>Skills</h2>
@@ -74,13 +81,13 @@
         </button>
       </div>
     </section>
-    <section class='experience' id='experience-section'>
+    <section class='experience sec' data-num='2' id='experience-section'>
       <div class='container'>
         <div class='title'>
           <h2 class='title__item'>Work Experience</h2>
         </div>
         <div class='experience__content background col-12'>
-          <div class='experience__item background__item col-6'>
+          <div class='experience__item background__item col-6 _anim-item'>
             <div class='timeline'>
               <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
                    xmlns='http://www.w3.org/2000/svg'>
@@ -95,7 +102,7 @@
                 exercitationem in iusto minima modi molestiae rerum sapiente sint unde!</p>
             </div>
           </div>
-          <div class='experience__item background__item background__item--revert col-6'>
+          <div class='experience__item background__item--revert col-6 _anim-item'>
             <div class='timeline'>
               <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
                    xmlns='http://www.w3.org/2000/svg'>
@@ -111,7 +118,7 @@
                 laboriosam maxime porro quasi sint temporibus veniam!</p>
             </div>
           </div>
-          <div class='experience__item background__item col-6'>
+          <div class='experience__item background__item col-6 _anim-item'>
             <div class='timeline'>
               <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
                    xmlns='http://www.w3.org/2000/svg'>
@@ -129,7 +136,7 @@
         </div>
       </div>
     </section>
-    <section class='projects' id='projects-section'>
+    <section class='projects sec' data-num='3' id='projects-section'>
       <div class='container'>
         <div class='title'>
           <h2 class='title__item'>Projects</h2>
@@ -164,13 +171,13 @@
         </div>
       </div>
     </section>
-    <section class='education' id='education-section'>
+    <section class='education sec' data-num='4' id='education-section'>
       <div class='container'>
         <div class='title'>
           <h2 class='title__item'>Education</h2>
         </div>
         <div class='education__content background col-12'>
-          <div class='experience__item background__item col-6'>
+          <div class='experience__item background__item col-6 _anim-item'>
             <div class='timeline'>
               <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
                    xmlns='http://www.w3.org/2000/svg'>
@@ -188,7 +195,7 @@
               </p>
             </div>
           </div>
-          <div class='experience__item background__item background__item--revert col-6'>
+          <div class='experience__item background__item--revert col-6 _anim-item'>
             <div class='timeline'>
               <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
                    xmlns='http://www.w3.org/2000/svg'>
@@ -204,7 +211,7 @@
                 laboriosam maxime porro quasi sint temporibus veniam!</p>
             </div>
           </div>
-          <div class='experience__item background__item col-6'>
+          <div class='experience__item background__item col-6 _anim-item'>
             <div class='timeline'>
               <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
                    xmlns='http://www.w3.org/2000/svg'>
@@ -222,9 +229,35 @@
         </div>
       </div>
     </section>
-
+    <section class='languages sec' data-num='5' id='languages-section'>
+      <div class='container'>
+        <div class='title'>
+          <h2 class='title__item'>Languages</h2>
+        </div>
+        <div class='languages-content  col-12' id='flags-container'>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+  <footer class='contacts sec col-12' data-num='6' id='contacts__section'>
+    <div class='container'>
+      <div class='title'>
+        <h2 class='title__item'>Contact me</h2>
+      </div>
+      <div class='contacts__content col-12'>
+        <div class='contacts__image-container'>
+          <img class='contacts__image' src='src/assets/images/photo.jpg'
+               alt='Andrei Kashchei'>
+        </div>
+        <div class='contacts__info'>
+          <div class='contacts__info-item contacts__info-item_media' id='social-media'></div>
+          <a class='contacts__info-item contacts__info-item__mail'
+             href='mailto:andrei.k.dev@gmail.com'>andrei.k.dev@gmail.com</a>
+          <div class='contacts__info-item'></div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 <script src='src/js/main.js' type='module'></script>
 </body>

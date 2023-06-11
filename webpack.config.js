@@ -4,7 +4,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const CleanWebpackPlugin =require('clean-webpack-plugin').CleanWebpackPlugin
 
 
-module.exports = (env) =>{
+module.exports = (env) => {
 
   const mode = env.mode || 'development';
   const isDev = mode === 'development';
@@ -64,6 +64,10 @@ module.exports = (env) =>{
           test: /\.(woff|woff2|eot|ttf|otf)$/i,
           type: 'asset/resource',
         },
+        {
+          test: /\.pdf$/i,
+          use:['file-loader']
+        }
       ],
     },
 
@@ -87,15 +91,10 @@ module.exports = (env) =>{
 
     devtool: isDev ? 'source-map' : undefined,
 
-    devServer: isDev
-      ? {
+    devServer: {
       historyApiFallback: true,
-      open: true,
-      compress: true,
       hot: true,
       port: 8080,
-      }
-      : undefined
-
+    }
   }
 }

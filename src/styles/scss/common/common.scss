@@ -29,7 +29,12 @@
 }
 
 .wrapper{
-@extend %flex-column-center
+  @extend %flex-column-center;
+  @extend  %font-normal;
+}
+
+._rotate {
+  transform: rotate(-180deg);
 }
 
 html{
