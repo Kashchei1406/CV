@@ -11,10 +11,8 @@ module.exports = (env) => {
 
 
   return {
-    entry: [
-      path.resolve(__dirname, 'src', 'js', 'main.js'),
-      path.resolve(__dirname, 'src', 'js', 'modules',  'animation.js')
-    ],
+    entry: path.resolve(__dirname, 'src', 'js', 'index.js'),
+
 
     output: {
       filename: '[name].[hash].js',

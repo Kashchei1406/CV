@@ -45,26 +45,20 @@
             </h1>
           </div>
           <div class='header__overview'>
-            <p class='header__overview-item _anim-item _anim-no-hide'>
+            <p class='header__overview-item'>
               Hi, I`m Andrei Kashchei and I`m Junior Front-end developer.
             </p>
-            <p class='header__overview-item header__overview-item--margin-top _anim-item _anim-no-hide'>
+            <p class='header__overview-item header__overview-item--margin-top'>
               I have a completed Front-end courses at IT School Intellect Fox and have basic knowledge of HTML, CSS,
               JavaScript, React and Redux
             </p>
           </div>
           <div class='header__buttons'>
-            <button class='header__btn--margin-right btn col-2'>
-              <a id='cv-link'  href='/' download='CV_ANDREI_KASHCHEI'>
-              <span class='btn__text'>Download CV</span>
-              </a>
-            </button>
-            <button class='header__btn--margin-left btn col-2'><span class='btn__text'>Contact me</span></button>
+            <a class='btn-link' id='cv-link' href='/' download='CV_ANDREI_KASHCHEI'>Download CV</a>
+            <a class='btn-link' href='#contacts__section'>Contact me</a>
           </div>
         </div>
-        <div class='header__img col-4 myPhoto'>
-          <img src='./src/assets/images/photo.jpg' alt='Andrei Kashchei' />
-        </div>
+        <img class='header__img' id='header__photo' src='/' alt='Andrei Kashchei' />
       </div>
     </div>
   </header>
@@ -77,7 +71,9 @@
         <div class='skills__content col-12' id='skills-content'>
         </div>
         <button class='btn-arrow skills__btn col-1' id='skills-arrow'>
-          <img class='btn-arrow__img' src='src/assets/images/arrow.svg' alt='arrow' />
+          <svg class='btn-arrow__img' width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.76 0.906616L16 13.1199L28.24 0.906616L32 4.66662L16 20.6666L0 4.66662L3.76 0.906616Z" fill="#120D0E"/>
+          </svg>
         </button>
       </div>
     </section>
@@ -142,17 +138,17 @@
           <h2 class='title__item'>Projects</h2>
         </div>
         <div class='projects__content'>
-          <div class='projects__image-container'>
-            <img class='projects__image' src='./src/assets/images/tripHouse.png' alt='project photo'>
-          </div>
-          <div class='projects__info'>
+          <div class='projects__item'>
+            <img class='projects__image' id='img-triphouse' src='/' alt='project photo'>
+            <div class='projects__info'>
             <div>
               <h3 class='project__subtitle'>Triphouse</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet dicta
                 eaque exercitationem obcaecati officiis quam repellendus totam ut voluptates?
               </p>
             </div>
-            <button class='btn'><span class='btn__text'>See on GitHub</span></button>
+            <a class='btn-link' href='https://github.com/Kashchei1406/if-js' target='_blank'>See on Github</a>
+          </div>
           </div>
         </div>
         <div class='slider__ellipses'>
@@ -259,6 +255,6 @@
     </div>
   </footer>
 </div>
-<script src='src/js/main.js' type='module'></script>
+<script src='src/js/index.js' type='module' defer></script>
 </body>
 </html>

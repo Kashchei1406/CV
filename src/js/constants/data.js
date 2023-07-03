@@ -12,9 +12,6 @@ import npmImg from '../../assets/images/npm.svg'
 import reactImg from '../../assets/images/react.svg'
 import reactRouteImg from '../../assets/images/react-router.svg'
 import reduxSagaImg from '../../assets/images/redux-saga.svg'
-import jssImg from '../../assets/images/jss.svg'
-import expressImg from '../../assets/images/express.svg'
-import nginxImg from '../../assets/images/nginx.svg'
 import figmaImg from '../../assets/images/figma.svg'
 import reduxImg from '../../assets/images/redux.svg'
 import pdfFile from '../../assets/files/resume.pdf'
@@ -23,6 +20,8 @@ import plflag from '../../assets/images/plFlag.svg'
 import ruflag from '../../assets/images/ruFlag.svg'
 import tgIcon from '../../assets/images/tg.svg'
 import linkedIcon from '../../assets/images/linkedIn.svg'
+import triphouseImage from '../../assets/images/tripHouse.png';
+import cv from '../../assets/files/resume.pdf'
 import selfPhoto from '../../assets/images/photo.jpg'
 
 
@@ -39,13 +38,10 @@ export const skillsArray = [
   { id: 10, name: 'Node.js', img: nodeJsImg, rating: 1 },
   { id: 11, name: 'npm', img: npmImg, rating: 3 },
   { id: 12, name: 'React', img: reactImg, rating: 2 },
-  { id: 13, name: 'React Router', img: reactRouteImg, rating: 0 },
+  { id: 13, name: 'React Router', img: reactRouteImg, rating: 2 },
   { id: 14, name: 'Redux-Saga', img: reduxSagaImg, rating: 0 },
-  { id: 15, name: 'JSS', img: jssImg, rating: 0 },
-  { id: 16, name: 'Express', img: expressImg, rating: 0 },
-  { id: 17, name: 'Nginx', img: nginxImg, rating: 0 },
   { id: 18, name: 'Figma', img: figmaImg, rating: 3 },
-  { id: 19, name: 'Redux', img: reduxImg, rating: 0 },
+  { id: 19, name: 'Redux', img: reduxImg, rating: 2 },
 ];
 
 export const flags = [
@@ -61,4 +57,4 @@ export const networks = [
 
 ]
 
-export { pdfFile };
+export { pdfFile, triphouseImage, cv, selfPhoto };

@@ -1,10 +1,3 @@
-import cv from '../../assets/files/resume.pdf'
-
-const cv_link = document.getElementById('cv-link')
-cv_link.href = cv
-
-
-
 export const createFlag = (flag) => {
     const {id, name, img, alt, level} = flag;
 
@@ -23,7 +16,7 @@ export const createNetworks = (network) => {
   const {name, img, link} = network
 
   return`
-      <a class='social-network' href=${link}>
+      <a class='social-network' href=${link} target='_blank'>
         <img class='social-network__img' src=${img} alt=${name}>
       </a>
   `
