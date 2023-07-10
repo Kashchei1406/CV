@@ -7,22 +7,20 @@ const CleanWebpackPlugin =require('clean-webpack-plugin').CleanWebpackPlugin
 module.exports = (env) => {
 
   const mode = env.mode || 'development';
-  const isDev = mode === 'development';
-
 
   return {
     entry: path.resolve(__dirname, 'src', 'js', 'index.js'),
 
-
     output: {
       filename: '[name].[hash].js',
-      path: path.resolve(__dirname, './dist'),
+      path: path.resolve(__dirname, 'dist'),
+      assetModuleFilename: 'images/[name].[hash].[ext]',
       clean: true,
     },
 
-    optimization: {
+/*    optimization: {
       runtimeChunk: 'single',
-    },
+    },*/
 
     module: {
       rules: [
@@ -51,7 +49,7 @@ module.exports = (env) => {
           ],
         },
         {
-          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
           type: 'asset/resource',
         },
         {
@@ -86,8 +84,6 @@ module.exports = (env) => {
     ],
 
     mode: mode,
-
-    devtool: isDev ? 'source-map' : undefined,
 
     devServer: {
       historyApiFallback: true,

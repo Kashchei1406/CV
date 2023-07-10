@@ -10,40 +10,44 @@
   <nav class='main-nav col-12' id='navigation'>
     <div class='container'>
       <ul class='main-nav__list'>
-        <li class='main-nav__item _anim-item _anim-no-hide'>
+        <li class='main-nav__item'>
           <a class='col-2 main-nav__link _active-nav' href='#header-section'>About</a>
         </li>
-        <li class='main-nav__item _anim-item _anim-no-hide'>
+        <li class='main-nav__item'>
           <a class='col-2 main-nav__link' href='#skills-section'>Skills</a>
         </li>
-        <li class='main-nav__item _anim-item _anim-no-hide'>
+        <li class='main-nav__item'>
           <a class='col-2 main-nav__link' href='#experience-section'>Experience</a>
         </li>
-        <li class='main-nav__item _anim-item _anim-no-hide'>
+        <li class='main-nav__item'>
           <a class='col-2 main-nav__link' href='#projects-section'>Projects</a>
         </li>
-        <li class='main-nav__item _anim-item _anim-no-hide'>
+        <li class='main-nav__item'>
           <a class='col-2 main-nav__link' href='#education-section'>Education</a>
         </li>
-        <li class='main-nav__item _anim-item _anim-no-hide'>
+        <li class='main-nav__item'>
           <a class='col-2 main-nav__link' href='#languages-section'>Languages</a>
         </li>
-        <li class='main-nav__item _anim-item _anim-no-hide'>
+        <li class='main-nav__item'>
           <a class='col-2 main-nav__link' href='#contacts__section'>Contact me</a>
         </li>
       </ul>
+      <button class='main-nav__toggle' id='menu-toggle'>
+        <span class='hamburger'></span>
+      </button>
     </div>
   </nav>
   <header class='header sec' data-num='0' id='header-section'>
     <div class='container'>
       <div class='header__content col-12'>
         <div class='header__about col-6'>
-          <div class='header__title title _anim-item _anim-no-hide'>
+          <div class='header__title title'>
             <h1 class='title__item'>
               Andrei Kashchei
               <span class='header__title-item--gray _anim-item _anim-no-hide'>Front-end developer</span>
             </h1>
           </div>
+          <img class='header__img header__img-mob' src='/' alt='Andrei Kashchei'>
           <div class='header__overview'>
             <p class='header__overview-item'>
               Hi, I`m Andrei Kashchei and I`m Junior Front-end developer.
@@ -71,8 +75,10 @@
         <div class='skills__content col-12' id='skills-content'>
         </div>
         <button class='btn-arrow skills__btn col-1' id='skills-arrow'>
-          <svg class='btn-arrow__img' width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.76 0.906616L16 13.1199L28.24 0.906616L32 4.66662L16 20.6666L0 4.66662L3.76 0.906616Z" fill="#120D0E"/>
+          <svg class='btn-arrow__img' width='32' height='21' viewBox='0 0 32 21' fill='none'
+               xmlns='http://www.w3.org/2000/svg'>
+            <path d='M3.76 0.906616L16 13.1199L28.24 0.906616L32 4.66662L16 20.6666L0 4.66662L3.76 0.906616Z'
+                  fill='#120D0E' />
           </svg>
         </button>
       </div>
@@ -92,10 +98,10 @@
               <h4 class='timeline__title'>Feb 2021 - till now</h4>
             </div>
             <div class='subtitle'>
-              <h3 class='subtitle__item'>TAJ<span class='subtitle__position'>International driver</span></h3>
-              <p class='background__text'>Air cargo movement in western Europe
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos error
-                exercitationem in iusto minima modi molestiae rerum sapiente sint unde!</p>
+              <h3 class='subtitle__item'>TAJ Sp. z o.o.<span class='subtitle__position'>International driver</span></h3>
+              <p class='background__text'>Air cargo movement in Western Europe. International communication
+                with subcontractors. Completion and verification of accompanying documents in accordance
+                with international standards. Airport loading and unloading.</p>
             </div>
           </div>
           <div class='experience__item background__item--revert col-6 _anim-item'>
@@ -104,14 +110,15 @@
                    xmlns='http://www.w3.org/2000/svg'>
                 <circle cx='6' cy='6' r='6' />
               </svg>
-              <h4 class='timeline__title'>Feb 2021 - till now</h4>
+              <h4 class='timeline__title'>Aug 2019 - Jun 2020</h4>
             </div>
             <div class='subtitle'>
-              <h3 class='subtitle__item'>TAJ<span class='subtitle__position'>International driver</span></h3>
-              <p class='background__text'>Air cargo movement in western Europe
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium culpa eum
-                impedit necessitatibus, nulla quae quis rem sequi voluptatem. Cum earum facilis
-                laboriosam maxime porro quasi sint temporibus veniam!</p>
+              <h3 class='subtitle__item'>Rajdo Trans Sp. z o.o.
+                <span class='subtitle__position'>International driver</span>
+              </h3>
+              <p class='background__text'>Air cargo movement in Western Europe. International communication
+                with subcontractors. Completion and verification of accompanying documents in accordance
+                with international standards.</p>
             </div>
           </div>
           <div class='experience__item background__item col-6 _anim-item'>
@@ -120,12 +127,32 @@
                    xmlns='http://www.w3.org/2000/svg'>
                 <circle cx='6' cy='6' r='6' />
               </svg>
-              <h4 class='timeline__title'>Feb 2021 - till now</h4>
+              <h4 class='timeline__title'>Mar 2018 - Oct 2018</h4>
             </div>
             <div class='subtitle'>
-              <h3 class='subtitle__company'>TAJ<span class='subtitle__position'>International driver</span></h3>
-              <p class='background__text'>Air cargo movement in Western Europe
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, iste.</p>
+              <h3 class='subtitle__company'>LLC "Titanmedia"
+                <span class='subtitle__position'>Head manager</span></h3>
+              <p class='background__text'><strong> Doubling profit of company in 5 month.</strong> Optimization the work
+                of company, brand and marketing development.
+                Recruitment and training staff</p>
+            </div>
+          </div>
+          <div class='experience__item background__item--revert col-6 _anim-item'>
+            <div class='timeline'>
+              <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
+                   xmlns='http://www.w3.org/2000/svg'>
+                <circle cx='6' cy='6' r='6' />
+              </svg>
+              <h4 class='timeline__title'>Aug 2019 - Jun 2020</h4>
+            </div>
+            <div class='subtitle'>
+              <h3 class='subtitle__item'>
+                Coffeehouse "Shekspeare"
+                <span class='subtitle__position'>Co-Owner</span>
+              </h3>
+              <p class='background__text'>Company management, brand and marketing development.
+                Recruitment and training of staff. Accounting and reporting.
+              </p>
             </div>
           </div>
           <div class='background__vertical-line'></div>
@@ -141,14 +168,12 @@
           <div class='projects__item'>
             <img class='projects__image' id='img-triphouse' src='/' alt='project photo'>
             <div class='projects__info'>
-            <div>
-              <h3 class='project__subtitle'>Triphouse</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet dicta
-                eaque exercitationem obcaecati officiis quam repellendus totam ut voluptates?
-              </p>
+                <h3 class='project__subtitle'>Triphouse</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet dicta
+                  eaque exercitationem obcaecati officiis quam repellendus totam ut voluptates?
+                </p>
+              <a class='btn-link' href='https://github.com/Kashchei1406/if-js' target='_blank'>See on Github</a>
             </div>
-            <a class='btn-link' href='https://github.com/Kashchei1406/if-js' target='_blank'>See on Github</a>
-          </div>
           </div>
         </div>
         <div class='slider__ellipses'>
@@ -179,16 +204,12 @@
                    xmlns='http://www.w3.org/2000/svg'>
                 <circle cx='6' cy='6' r='6' />
               </svg>
-              <h4 class='timeline__title'>Feb 2022 - Oct 2022</h4>
+              <h4 class='timeline__title'>Feb 2022 - Nov 2022</h4>
             </div>
             <div class='subtitle'>
               <h3 class='subtitle__item'>IT School Intellect Fox
                 <span class='subtitle__position'>Front-end developer course</span>
               </h3>
-              <p class='background__text'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos error
-                exercitationem in iusto minima modi molestiae rerum sapiente sint unde!
-              </p>
             </div>
           </div>
           <div class='experience__item background__item--revert col-6 _anim-item'>
@@ -197,14 +218,11 @@
                    xmlns='http://www.w3.org/2000/svg'>
                 <circle cx='6' cy='6' r='6' />
               </svg>
-              <h4 class='timeline__title'>Feb 2021 - till now</h4>
+              <h4 class='timeline__title'>Jun 2020 - Mar 2021</h4>
             </div>
             <div class='subtitle'>
-              <h3 class='subtitle__item'>TAJ<span class='subtitle__position'>International driver</span></h3>
-              <p class='background__text'>Air cargo movement in western Europe
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium culpa eum
-                impedit necessitatibus, nulla quae quis rem sequi voluptatem. Cum earum facilis
-                laboriosam maxime porro quasi sint temporibus veniam!</p>
+              <h3 class='subtitle__item'>English school<br> "Mr. English"
+                <span class='subtitle__position'>A2+ level</span></h3>
             </div>
           </div>
           <div class='experience__item background__item col-6 _anim-item'>
@@ -213,12 +231,31 @@
                    xmlns='http://www.w3.org/2000/svg'>
                 <circle cx='6' cy='6' r='6' />
               </svg>
-              <h4 class='timeline__title'>Feb 2021 - till now</h4>
+              <h4 class='timeline__title'>Jun 2020 - Oct 2020</h4>
             </div>
             <div class='subtitle'>
-              <h3 class='subtitle__company'>TAJ<span class='subtitle__position'>International driver</span></h3>
-              <p class='background__text'>Air cargo movement in Western Europe
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, iste.</p>
+              <h3 class='subtitle__company'>IT school "IT Academy"
+                <span class='subtitle__position'>JavaSE course</span>
+              </h3>
+            </div>
+          </div>
+          <div class='experience__item background__item--revert col-6 _anim-item'>
+            <div class='timeline'>
+              <svg class='timeline__ellipse' width='12' height='12' viewBox='0 0 12 12'
+                   xmlns='http://www.w3.org/2000/svg'>
+                <circle cx='6' cy='6' r='6' />
+              </svg>
+              <h4 class='timeline__title'>Sep 2012 - Jun 2014</h4>
+            </div>
+            <div class='subtitle'>
+              <h3 class='subtitle__item'>Technical college
+                <span class='subtitle__position'>
+                  Technical specialist
+                </span>
+              </h3>
+              <p class='background__text'>
+                Technical exploitation and repair of vehicles(Technical specialist)
+              </p>
             </div>
           </div>
           <div class='background__vertical-line'></div>
@@ -249,12 +286,12 @@
           <div class='contacts__info-item contacts__info-item_media' id='social-media'></div>
           <a class='contacts__info-item contacts__info-item__mail'
              href='mailto:andrei.k.dev@gmail.com'>andrei.k.dev@gmail.com</a>
-          <div class='contacts__info-item'></div>
+          <a class='contacts__info-item' href='tel:+48677655742'>+48 577 655 742</a>
         </div>
       </div>
     </div>
   </footer>
 </div>
-<script src='src/js/index.js' type='module' defer></script>
+<script src='src/js/index.js' type='module'></script>
 </body>
 </html>

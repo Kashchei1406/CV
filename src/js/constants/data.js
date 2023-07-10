@@ -20,7 +20,7 @@ import plflag from '../../assets/images/plFlag.svg'
 import ruflag from '../../assets/images/ruFlag.svg'
 import tgIcon from '../../assets/images/tg.svg'
 import linkedIcon from '../../assets/images/linkedIn.svg'
-import triphouseImage from '../../assets/images/tripHouse.png';
+import triphouseImage from '../../assets/images/tripHouse.webp';
 import cv from '../../assets/files/resume.pdf'
 import selfPhoto from '../../assets/images/photo.jpg'
 
@@ -45,9 +45,9 @@ export const skillsArray = [
 ];
 
 export const flags = [
-  {id: 20, name: 'English', img: enflag, alt: 'England Flag', level: 'Elementary A2'},
-  {id: 21, name: 'Polish', img: plflag, alt: 'Poland Flag', level: 'Elementary A2'},
-  {id: 22, name: 'Russian', img: ruflag, alt: 'Russian flag', level: 'Native C2' }
+  {id: 20, name: 'English', img: enflag, alt: 'England_Flag', level: 'Elementary A2'},
+  {id: 21, name: 'Polish', img: plflag, alt: 'Poland_Flag', level: 'Elementary A2'},
+  {id: 22, name: 'Russian', img: ruflag, alt: 'Russian_flag', level: 'Native C2' }
 ]
 
 export const networks = [

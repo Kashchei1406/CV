@@ -10,7 +10,7 @@ import {
   FLAGS_CONTAINER,
   CV_LINK,
   IMG_TRIPHOUSE,
-  HEADER_IMAGE,
+  NAV_TOGGLE, NAV_MENU, IMAGES_ANDREI,
 } from './constants/common.js';
 import { checkAnimItems, sectionObserver } from './modules/animation.js';
 import { createFlag, createNetworks } from './modules/helpers';
@@ -19,7 +19,8 @@ checkAnimItems(ANIM_ITEMS);
 
 CV_LINK.href = cv;
 IMG_TRIPHOUSE.src = triphouseImage;
-HEADER_IMAGE.src = selfPhoto;
+//HEADER_IMAGE.src = selfPhoto;
+IMAGES_ANDREI.forEach(img => img.src = selfPhoto)
 
 skillsArray
   .sort((a, b) => b.rating - a.rating)
@@ -38,5 +39,7 @@ SKILLS_ARROW.addEventListener('click', () => {
     fullSectionObserver.observe(SKILLS_SECTION);
   } else fullSectionObserver.unobserve(SKILLS_SECTION);*/
 });
+
+NAV_TOGGLE.addEventListener('click',() => NAV_MENU.classList.toggle('_opened') )
 
 SECTIONS.forEach((section) => sectionObserver.observe(section));

@@ -19,7 +19,7 @@ export const checkAnimItems = (items) => {
 const callback = entries => {
   entries.forEach(entry => {
 
-    if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
       NAV_LINKS.forEach(link => {
         link.classList.remove('_active-nav');
       });
@@ -37,7 +37,7 @@ const callback = entries => {
 };
 
 export const sectionObserver = new IntersectionObserver(callback, {
-  threshold: [ 0.3, 0.4, 0.5],
+  threshold: [ 0.3, 0.4],
   rootMargin: '-110px 0px 0px 0px',
 });
 
