@@ -7,7 +7,6 @@ export const SECTIONS = document.querySelectorAll('.sec')
 export const SOCIAL_MEDIA = document.getElementById('social-media')
 export const CV_LINK = document.getElementById('cv-link');
 export const IMG_TRIPHOUSE = document.getElementById('img-triphouse');
-export const HEADER_IMAGE = document.getElementById('header__photo');
 export const FLAGS_CONTAINER = document.getElementById('flags-container');
 export const NAV_TOGGLE = document.getElementById('menu-toggle');
 export const NAV_MENU = document.getElementById('navigation')

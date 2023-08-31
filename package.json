@@ -10,7 +10,7 @@
     "lint:write": "eslint --debug src/js/ --fix",
     "prepare": "husky install",
     "start": "webpack serve",
-    "build-dev": "webpack --node-env mode=debelopment",
+    "build-dev": "webpack --env mode=development",
     "build-prod": " webpack --env mode=production"
   },
   "repository": {
@@ -28,7 +28,6 @@
     "@babel/eslint-parser": "^7.18.2",
     "@babel/preset-env": "^7.21.5",
     "babel-loader": "^9.1.2",
-    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
     "eslint": "^8.16.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -41,6 +40,7 @@
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.1",
     "husky": "^8.0.1",
+    "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^7.3.0",
     "prettier": "2.6.2",
     "sass": "^1.53.0",

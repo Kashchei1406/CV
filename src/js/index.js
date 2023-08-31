@@ -19,7 +19,6 @@ checkAnimItems(ANIM_ITEMS);
 
 CV_LINK.href = cv;
 IMG_TRIPHOUSE.src = triphouseImage;
-//HEADER_IMAGE.src = selfPhoto;
 IMAGES_ANDREI.forEach(img => img.src = selfPhoto)
 
 skillsArray

@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const CleanWebpackPlugin =require('clean-webpack-plugin').CleanWebpackPlugin
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 
 module.exports = (env) => {
@@ -9,18 +9,16 @@ module.exports = (env) => {
   const mode = env.mode || 'development';
 
   return {
+    mode: mode,
+
     entry: path.resolve(__dirname, 'src', 'js', 'index.js'),
 
     output: {
       filename: '[name].[hash].js',
       path: path.resolve(__dirname, 'dist'),
-      assetModuleFilename: 'images/[name].[hash].[ext]',
+      assetModuleFilename: 'assets/[name].[hash][ext]',
       clean: true,
     },
-
-/*    optimization: {
-      runtimeChunk: 'single',
-    },*/
 
     module: {
       rules: [
@@ -39,12 +37,8 @@ module.exports = (env) => {
         {
           test: /\.scss$/i,
           use: [
-            // Creates `style` nodes from JS strings
-            "style-loader",
-            // Translates CSS into CommonJS
+            MiniCssExtractPlugin.loader,
             "css-loader",
-            'postcss-loader',
-            // Compiles Sass to CSS
             "sass-loader",
           ],
         },
@@ -80,10 +74,8 @@ module.exports = (env) => {
         }
       ),
       new BundleAnalyzerPlugin(),
-      new CleanWebpackPlugin()
+      new MiniCssExtractPlugin(),
     ],
-
-    mode: mode,
 
     devServer: {
       historyApiFallback: true,
