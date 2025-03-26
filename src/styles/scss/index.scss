@@ -136,6 +136,7 @@
 .skills__content {
   display: flex;
   margin-bottom: 56px;
+  gap: 24px;
   justify-content: space-between;
   flex-wrap: wrap;
   overflow: hidden;
@@ -155,9 +156,8 @@
   @extend %flex-column;
   justify-content: space-between;
   align-items: center;
-  max-width: 185px;
   width: calc(100% / 6);
-  margin: 0 10px 80px 10px;
+  margin-bottom: 80px;
 
   figcaption {
     @extend %font-normal;
@@ -337,6 +337,7 @@
 
 .projects__content {
   display: flex;
+  flex-direction: column;
   margin-bottom: 56px;
 }
 
@@ -581,10 +582,6 @@
 
   .skills__item {
     width: calc(100% / 3);
-  }
-
-  .skills__content{
-    justify-content: space-around;
   }
 
   .projects__item{
